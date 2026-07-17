@@ -16,6 +16,63 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+        
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Add padding to body to account for fixed nav */
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+}
+        
+/* Section styling */
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    scroll-margin-top: 60px; /* Offset for fixed nav */
+    }
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+        
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+        
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 html{
     scroll-behavior:smooth;
 }
@@ -260,6 +317,17 @@ footer{
 
 </header>
 
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+    
 <section id="gallery">
 
     <div class="shop-buttons">

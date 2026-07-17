@@ -88,13 +88,13 @@ h2{
     background:#343536;
 }
 
-.gallery{
+.photogallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
-.gallery img{
+.photogallery img{
     width:100%;
     height:250px;
     object-fit:cover;
@@ -104,7 +104,7 @@ h2{
     box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
-.gallery img:hover{
+.photogallery img:hover{
     transform:scale(1.03);
 }
 
@@ -228,117 +228,107 @@ footer{
 
 </head>
 
+/* ------------------------------------------------------------------------------------------------------ */    
+
 <body>
-
 <header>
+    <div class="logo-title">
+        <img src="pingu logo.jpeg" alt="pingu logo" class="logo">
+        <h1>pingu.art</h1>
+    </div>
 
-<div class="logo-title">
+    <p>Lighting up memories✨ EST. 2022</p>
 
-    <img src="pingu logo.jpeg" alt="pingu logo" class="logo">
+    <div class="header-socials">
+        <a href="https://www.facebook.com/profile.php?id=100082812366407" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
 
-    <h1>pingu.art</h1>
-
-</div>
-
-<p>Lighting up memories✨ Est. 2022</p>
-
-<div class="header-socials">
-<a href="https://www.facebook.com/profile.php?id=100082812366407" target="_blank">
-    <img src="facebook.png" alt="Facebook">
-</a>
-
-<a href="https://www.instagram.com/pingu.art.ph?utm_source=qr" target="_blank">
-    <img src="instagram.png" alt="Instagram">
-</a>
+        <a href="https://www.instagram.com/pingu.art.ph?utm_source=qr" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        
+        <a href="https://www.tiktok.com/@pinguartph?is_from_webapp=1&sender_device=pc_blank" target="_blank">
+            <img src="tiktok.png" alt="TikTok">
+        </a>
     
-<a href="https://www.tiktok.com/@pinguartph?is_from_webapp=1&sender_device=pc_blank" target="_blank">
-    <img src="tiktok.png" alt="TikTok">
-</a>
+        <a href="https://x.com/pinguartph" target="_blank">
+            <img src="twitter.png" alt="X/Twitter">
+        </a>
 
-<a href="https://x.com/pinguartph" target="_blank">
-    <img src="twitter.png" alt="X/Twitter">
-</a>
-
-</div>    
+    </div>    
 
 </header>
 
 <section id="gallery">
 
-<div class="shop-buttons">
+    <div class="shop-buttons">
+        <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="direct">
+        ⭐ DIRECT ORDER (PRIORITY)
+        </a>
+    
+        <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="shopee">
+        🆂 Shopee Checkout
+        </a>
+    
+        <a href="https://vt.tiktok.com/ZS9MgFjgBHxdu-RmOtR/" target="_blank" class="tiktok">
+        🛒 TikTok Yellow Basket
+        </a>
+    
+    </div>
 
-<a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="direct">
-⭐ DIRECT ORDER (PRIORITY)
-</a>
-
-<a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="shopee">
-🆂 Shopee Checkout
-</a>
-
-<a href="https://vt.tiktok.com/ZS9MgFjgBHxdu-RmOtR/" target="_blank" class="tiktok">
-🛒 TikTok Yellow Basket
-</a>
-
-</div>
-
-<div class="gallery">
-
-<img src="1.JPEG" onclick="openImage(this.src)">
-<img src="2.JPEG" onclick="openImage(this.src)">
-<img src="3.JPEG" onclick="openImage(this.src)">
-<img src="4.JPEG" onclick="openImage(this.src)">
-<img src="5.JPEG" onclick="openImage(this.src)">
-<img src="6.JPEG" onclick="openImage(this.src)">
-<img src="7.JPEG" onclick="openImage(this.src)">
-
-</div>
-
+    <div class="photogallery">
+        <img src="1.JPEG" onclick="openImage(this.src)">
+        <img src="2.JPEG" onclick="openImage(this.src)">
+        <img src="3.JPEG" onclick="openImage(this.src)">
+        <img src="4.JPEG" onclick="openImage(this.src)">
+        <img src="5.JPEG" onclick="openImage(this.src)">
+        <img src="6.JPEG" onclick="openImage(this.src)">
+        <img src="7.JPEG" onclick="openImage(this.src)">
+    </div>
 </section>
 
 <section>
 
-<div class="video-scroll">
-
-    <video autoplay muted loop playsinline>
-        <source src="1.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="2.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="3.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="4.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="5.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="6.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="7.mp4" type="video/mp4">
-    </video>
-
-    <video autoplay muted loop playsinline>
-        <source src="8.mp4" type="video/mp4">
-    </video>
-
-</div>
+    <div class="video-scroll">
+        <video autoplay muted loop playsinline>
+            <source src="1.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="2.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="3.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="4.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="5.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="6.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="7.mp4" type="video/mp4">
+        </video>
+    
+        <video autoplay muted loop playsinline>
+            <source src="8.mp4" type="video/mp4">
+        </video>
+    
+    </div>
 
 </section>
 
 <footer>
-
-<p>© 2026 pingu.art. All Rights Reserved.</p>
-
+    <p>© 2026 pingu.art. All Rights Reserved.</p>
 </footer>
 
 <!-- Image Popup -->

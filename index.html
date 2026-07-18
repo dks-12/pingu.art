@@ -26,7 +26,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    overflow-x: auto;
     background-color: #333;
     padding: 15px 0;
     z-index: 1000;
@@ -35,6 +34,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+    display: none;
     }
 
     nav ul {
@@ -51,6 +58,7 @@
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
+    flex-shrink: 0;
     }
         
     nav a:hover {

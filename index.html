@@ -8,15 +8,20 @@
 
 <link rel="icon" type="image/png" href="pingu logo.jpeg">
 
+
 <style>
-*{
+    *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-}
+    }
 
-nav {
+    html{
+    scroll-behavior:smooth;
+    }
+
+    nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,229 +29,103 @@ nav {
     background-color: #333;
     padding: 15px 0;
     z-index: 1000;
-}
+    }
 
-nav ul {
+    nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 30px;
-}
+    }
 
-nav a {
+    nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
-}
+    }
         
-nav a:hover {
+    nav a:hover {
     background-color: #555;
     border-radius: 5px;
-}
+    }
 
 /* Add padding to body to account for fixed nav */
-body {
+    body {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 10px;
     font-family: Arial, sans-serif;
-}
-        
-/* Section styling */
-section {
-    min-height: 10vh;
-    padding: 10px 10px;
-    scroll-margin-top: 60px; /* Offset for fixed nav */
     }
-section:nth-child(odd) {
-    background-color: #f4f4f4;
-} 
-section:nth-child(even) {
-    background-color: #e0e0e0;
-} 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-html{
-    scroll-behavior:smooth;
-}
+/* Section styling */
+    section {
+    min-height: 40vh;
+    padding: 20px 10px;
+    scroll-margin-top: 40px; /* Offset for fixed nav */
+    }
 
-body{
-    background:#f5f5f5;
-    color:#333;
-}
-
-header{
-    background:#bfbfbf;
+    header{
     color:#222;
     text-align:center;
-    padding:70px 20px;
-}
+    padding: 40px 40px;
+    }
 
-header h1{
+    header h1{
     font-size:45px;
-}
+    }
 
-header p{
+    header p{
     margin-top:15px;
     font-size:18px;
-}
+    }
 
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 25px;
-    background:#ff5c5c;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-
-.btn:hover{
-    background:#e14d4d;
-}
-
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-h2{
+    body{
+    background:#a6daff;
     text-align:center;
-    margin-bottom:25px;
-}
+    color:#333;
+    }
 
-.shop-buttons{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.shop-buttons a:hover{
-    transform:scale(1.05);
-    opacity:0.9;
-}
-
-.direct{
-    background:#24BAFF;
-}
-
-.shopee{
-    background:#EE4D2D;
-}
-
-.tiktok{
-    background:#343536;
-}
-
-.photogallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.photogallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:10px;
-    cursor:pointer;
-    transition:.3s;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
-
-.photogallery img:hover{
-    transform:scale(1.03);
-}
-
-.video-scroll{
-    display:flex;
-    gap:20px;
-    overflow-x:auto;
-    padding:10px;
-    scroll-behavior:smooth;
-}
-
-.video-scroll video{
-    width:300px;
-    height:500px;
-    border-radius:10px;
-    flex-shrink:0;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-
-/* Image Popup */
-
-#popup{
-    display:none;
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.85);
-    justify-content:center;
-    align-items:center;
-    cursor:pointer;
-}
-
-#popup img{
-    max-width:90%;
-    max-height:90%;
-    border-radius:10px;
-}
-
-.logo-title{
+    .logo-title{
     display:flex;
     justify-content:center;
     align-items:center;
     gap:15px;
-}
+    }
 
-.logo{
+    .logo{
     width:70px;
     height:70px;
     object-fit:cover;
     border-radius:50%;
     border:0.4px solid white;
-}
+    }
 
-.header-socials{
+    .header-socials{
     margin-top:20px;
-}
+    }
 
-.header-socials a{
+    .header-socials a{
     display:inline-block;
     margin:0 4px;
     font-size:4px;
     color:white;
     transition:.3s;
-}
+    }
 
-.header-socials a:hover{
+    .header-socials a:hover{
     color:#ff5c5c;
     transform:scale(1.2);
-}
+    }
 
-.header-socials img{
+    .header-socials img{
     width: 40px;
     height: 40px;
     object-fit: contain;
     transition: 0.3s;
-}
+    }
 
-.shop-buttons a{
+    .shop-buttons a{
     display:inline-block;
     margin:10px;
     padding:18px 40px;
@@ -254,14 +133,33 @@ footer{
     font-size:20px;
     font-weight:bold;
     text-align:center;
+    margin-bottom:30px;
     text-decoration:none;
     color:white;
     border-radius:10px;
     transition:0.3s;
     animation: pulseFlash 1.5s infinite;
-}
+    }
 
-@keyframes pulseFlash{
+    .shop-buttons a:hover{
+    transform:scale(1.05);
+    opacity:0.9;
+    }
+
+    .direct{
+    background:#d00e0e;
+    }
+
+    .shopee{
+    background:#EE4D2D;
+    }
+
+    .tiktok{
+    background:#343536;
+    }
+
+
+    @keyframes pulseFlash{
     0%{
         transform:scale(1);
         filter:brightness(100%);
@@ -276,7 +174,180 @@ footer{
         transform:scale(1);
         filter:brightness(100%);
     }
-}
+    }
+
+    /* Image Popup */
+
+    #popup{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.85);
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    }
+
+    #popup img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+    }
+
+    table {
+    width: 80%;
+    margin: 20px auto;   /* Centers the table */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    }
+
+    th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    }
+
+    th {
+    background-color: #555;
+    color: white;
+    }
+
+    footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    }
+
+    .gallery-container{
+    position:relative;
+    width:90%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    }
+
+    .gallery{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    padding:20px;
+    scrollbar-width:none;
+    }
+
+    .gallery::-webkit-scrollbar{
+    display:none;
+    }
+
+    .item{
+    flex:0 0 auto;
+    width:250px;
+    transition:.4s;
+    opacity:.35;
+    transform:scale(.9);
+    }
+
+    .item img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+    }
+
+    .item.active{
+    opacity:1;
+    transform:scale(1);
+    }
+
+    .arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    font-size:30px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:5;
+    }
+
+    .left{
+    left:-20px;
+    }
+
+    .right{
+    right:-20px;
+    }
+
+    .video-gallery-container{
+    position:relative;
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    }
+
+    .video-gallery{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    padding:20px;
+    }
+
+    .video-gallery::-webkit-scrollbar{
+    display:none;
+    }
+
+    .video-item{
+    flex:0 0 auto;
+    width:300px;
+    opacity:.35;
+    transform:scale(.9);
+    transition:.4s;
+    }
+
+    .video-item video{
+    width:100%;
+    border-radius:15px;
+    display:block;
+    }
+
+    .video-item.active{
+    opacity:1;
+    transform:scale(1);
+    }
+
+    .video-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.6);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    z-index:10;
+    }
+
+    .video-arrow.left{
+    left:-20px;
+    }
+
+    .video-arrow.right{
+    right:-20px;
+    }
 
 </style>
 
@@ -284,136 +355,294 @@ footer{
 
 
 
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Order Now">Order Now</a></li>
+        </ul>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav>
-    <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#Order Now">Order Now</a></li>
-        <li><a href="#Services">Services</a></li>
-    </ul>
-</nav>
+    <section id="Home">
+        <header>
+            <div class="logo-title">
+                <img src="pingu logo.jpeg" alt="pingu logo" class="logo">
+                <h1>pingu.art</h1>
+            </div>
+            <p>Lighting up memories ✨ est. 2022</p>
 
-<section id="Home">
-<header>
-    <div class="logo-title">
-        <img src="pingu logo.jpeg" alt="pingu logo" class="logo">
-        <h1>pingu.art</h1>
-    </div>
+            <div class="header-socials">
+                <a href="https://www.facebook.com/profile.php?id=100082812366407" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>        
+                <a href="https://www.instagram.com/pingu.art.ph?utm_source=qr" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>             
+                <a href="https://www.tiktok.com/@pinguartph?is_from_webapp=1&sender_device=pc_blank" target="_blank">
+                    <img src="tiktok.png" alt="TikTok">
+                </a>      
+                <a href="https://x.com/pinguartph" target="_blank">
+                    <img src="twitter.png" alt="X/Twitter">
+                </a>
+            </div> 
+        </header>
+    </section>
 
-    <p>Lighting up memories✨ est. 2022</p>
-
-    <div class="header-socials">
-        <a href="https://www.facebook.com/profile.php?id=100082812366407" target="_blank">
-            <img src="facebook.png" alt="Facebook">
-        </a>
-
-        <a href="https://www.instagram.com/pingu.art.ph?utm_source=qr" target="_blank">
-            <img src="instagram.png" alt="Instagram">
-        </a>
+    <section id="Order Now">
+        <h2><u>Order Now!</u></h2>
+        <div class="shop-buttons">
+            <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="direct">
+            ⭐ DIRECT ORDER (PRIORITY) 
+            </a>
         
-        <a href="https://www.tiktok.com/@pinguartph?is_from_webapp=1&sender_device=pc_blank" target="_blank">
-            <img src="tiktok.png" alt="TikTok">
-        </a>
-    
-        <a href="https://x.com/pinguartph" target="_blank">
-            <img src="twitter.png" alt="X/Twitter">
-        </a>
+            <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="shopee">
+            🆂 Shopee Checkout
+            </a>
+        
+            <a href="https://vt.tiktok.com/ZS9MgFjgBHxdu-RmOtR/" target="_blank" class="tiktok">
+            🛒 TikTok Yellow Basket
+            </a>
+        </div>
+    </section>   
 
-    </div>    
+    <section id="Products">
+        <h2><u>Pricing</u></h2>
+        <table border="Variations">
+            <tr>
+                <th style="text-align:center;">Variation</th>
+                <th style="text-align:center;">Description</th>
+                <th style="text-align:center;">Price</th>
+            </tr>
+            <tr>
+                <td>Musical Lightbox Portrait</td>
+                <td>• <strong style="color:rgb(0, 131, 0);">WITH MUSIC BOX </strong>(upto 3 music files)<br>
+                    • Customized Illuminating Portrait <br>
+                    • USB powered with switch <br>
+                    • Frame Size - 20cm x 25cm <br>
+                </td>
+                <td>₱1659.00 (DIRECT Order)</td>
+            </tr>
+            <tr>
+                <td>Classic Lightbox Portrait</td>
+                <td>• <strong style="color:red;">NO MUSIC BOX</strong><br>
+                    • Customized Illuminating Portrait <br>
+                    • USB powered with switch <br>
+                    • Frame Size - 20cm x 25cm <br>
+                </td>
+                <td>₱1259.00 (DIRECT Order)</td>
+            </tr>
+        </table>
+        <h2><u>Lead Time</u></h2>
+        <table border="Leadtime">
+            <tr>
+                <th style="text-align:center;">Order Options</th>
+                <th style="text-align:center;">Lead Time</th>
+                <th style="text-align:center;">Shipping Platform</th>
+            </tr>
+            <tr>
+                <td>⭐ <strong>DIRECT Order</strong> ⭐</td>
+                <td><strong>3-4 Days</strong></td>
+                <td><strong>J&T Express</strong></td>
+            </tr>
+            <tr>
+                <td>Shopee</td>
+                <td>10-14 Days</td>
+                <td>Shopee Carrier</td>
+            </tr>
+            <tr>
+                <td>TikTok</td>
+                <td>10-14 Days</td>
+                <td>TikTok Carrier</td>
+            </tr>
+        </table>
+    </section>
 
-</header>
-</section>
-    
-<section id="Order Now">
-    <div class="shop-buttons">
-        <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="direct">
-        ⭐ DIRECT ORDER (PRIORITY)
-        </a>
-    
-        <a href="https://ph.shp.ee/D1bjJBHZ" target="_blank" class="shopee">
-        🆂 Shopee Checkout
-        </a>
-    
-        <a href="https://vt.tiktok.com/ZS9MgFjgBHxdu-RmOtR/" target="_blank" class="tiktok">
-        🛒 TikTok Yellow Basket
-        </a>
-    </div>
-</section>
-    
-<section id="gallery">
-    <div class="photogallery">
-        <img src="1.JPEG" onclick="openImage(this.src)">
-        <img src="2.JPEG" onclick="openImage(this.src)">
-        <img src="3.JPEG" onclick="openImage(this.src)">
-        <img src="4.JPEG" onclick="openImage(this.src)">
-        <img src="5.JPEG" onclick="openImage(this.src)">
-        <img src="6.JPEG" onclick="openImage(this.src)">
-        <img src="7.JPEG" onclick="openImage(this.src)">
-    </div>
-</section>
 
-<section>
+    <section id="Gallery">
+        <h2><u>Photo Gallery</u></h2>
+        <div class="gallery-container">
+            <button class="arrow left" onclick="scrollGallery(-1)">❮</button>
+        
+            <div class="gallery" id="gallery">
+                <div class="item"><img src="1.JPEG"></div>
+                <div class="item"><img src="2.JPEG"></div>
+                <div class="item"><img src="3.JPEG"></div>
+                <div class="item"><img src="4.JPEG"></div>
+                <div class="item"><img src="5.JPEG"></div>
+                <div class="item"><img src="6.JPEG"></div>
+                <div class="item"><img src="7.JPEG"></div>
+            </div>
+        
+            <button class="arrow right" onclick="scrollGallery(1)">❯</button>
+        </div>
 
-    <div class="video-scroll">
-        <video autoplay muted loop playsinline>
-            <source src="1.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="2.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="3.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="4.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="5.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="6.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="7.mp4" type="video/mp4">
-        </video>
-    
-        <video autoplay muted loop playsinline>
-            <source src="8.mp4" type="video/mp4">
-        </video>
-    
-    </div>
+        <h2><u>Video Gallery</u></h2>
+        <div class="video-gallery-container">
+            <button class="video-arrow left" onclick="scrollVideos(-1)">❮</button>
+            <div class="video-gallery" id="videoGallery">
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="5.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="6.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="7.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline controls>
+                        <source src="8.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        
+            <button class="video-arrow right" onclick="scrollVideos(1)">❯</button>
+        
+        </div>
+    </section>
+   
+   
+    <footer>
+        <p>© 2026 pingu.art. All Rights Reserved.</p>
+    </footer>
 
-</section>
 
-<footer>
-    <p>© 2026 pingu.art. All Rights Reserved.</p>
-</footer>
+    <script>
+        const gallery = document.getElementById("gallery");
+const items = document.querySelectorAll(".item");
 
-<!-- Image Popup -->
+function scrollGallery(direction){
+    gallery.scrollBy({
+        left: direction * 270,
+        behavior:"smooth"
+    });
 
-<div id="popup" onclick="closeImage()">
-<img id="popupImage">
-</div>
-
-<script>
-function openImage(src){
-    document.getElementById("popup").style.display="flex";
-    document.getElementById("popupImage").src=src;
+    setTimeout(updateCenter,300);
 }
 
-function closeImage(){
-    document.getElementById("popup").style.display="none";
-}
-</script>
+gallery.addEventListener("scroll",updateCenter);
+
+function updateCenter(){
+
+    const galleryCenter =
+        gallery.scrollLeft + gallery.offsetWidth/2;
+
+    let closest = null;
+    let smallest = Infinity;
+
+    items.forEach(item=>{
+
+        const center =
+            item.offsetLeft + item.offsetWidth/2;
+
+        const distance =
+            Math.abs(galleryCenter-center);
+
+        if(distance < smallest){
+            smallest = distance;
+            closest = item;
+        }
+
+        const opacity =
+            Math.max(.25,1-distance/400);
+
+        const scale =
+            Math.max(.85,1-distance/1000);
+
+        item.style.opacity = opacity;
+        item.style.transform = `scale(${scale})`;
+
+        item.classList.remove("active");
+    });
+
+    closest.classList.add("active");
+    }
+
+    updateCenter();
+
+
+
+    const videoGallery = document.getElementById("videoGallery");
+    const videoItems = document.querySelectorAll(".video-item");
+
+    function scrollVideos(direction){
+
+    videoGallery.scrollBy({
+        left: direction * 320,
+        behavior: "smooth"
+    });
+
+    setTimeout(updateVideoCenter,300);
+    }
+
+    videoGallery.addEventListener("scroll", updateVideoCenter);
+
+    function updateVideoCenter(){
+
+    const center =
+        videoGallery.scrollLeft + videoGallery.offsetWidth/2;
+
+    let closest = null;
+    let smallest = Infinity;
+
+    videoItems.forEach(item=>{
+
+        const itemCenter =
+            item.offsetLeft + item.offsetWidth/2;
+
+        const distance =
+            Math.abs(center-itemCenter);
+
+        item.style.opacity = Math.max(.25,1-distance/400);
+        item.style.transform =
+            `scale(${Math.max(.85,1-distance/1000)})`;
+
+        item.classList.remove("active");
+
+        if(distance < smallest){
+            smallest = distance;
+            closest = item;
+        }
+
+    });
+
+    if(closest){
+        closest.classList.add("active");
+    }
+
+    }
+
+    updateVideoCenter();
+    </script>
 
 </body>
-</html>
+
